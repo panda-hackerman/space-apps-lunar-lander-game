@@ -25,6 +25,22 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""d8d3c90f-c710-4d28-8f8b-84aa98a6eb06"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""MouseLook"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""057d19d4-ba8f-49dd-a4ab-3b48508e2738"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -82,6 +98,28 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""122f33d7-61d5-4357-8945-53f790665fb5"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6ee6a1f-2c18-4d4e-b253-d7f3e0685b89"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""MouseLook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -108,6 +146,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // Main Action Map
         m_MainActionMap = asset.FindActionMap("Main Action Map", throwIfNotFound: true);
         m_MainActionMap_Move = m_MainActionMap.FindAction("Move", throwIfNotFound: true);
+        m_MainActionMap_Jump = m_MainActionMap.FindAction("Jump", throwIfNotFound: true);
+        m_MainActionMap_MouseLook = m_MainActionMap.FindAction("MouseLook", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -158,11 +198,15 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_MainActionMap;
     private IMainActionMapActions m_MainActionMapActionsCallbackInterface;
     private readonly InputAction m_MainActionMap_Move;
+    private readonly InputAction m_MainActionMap_Jump;
+    private readonly InputAction m_MainActionMap_MouseLook;
     public struct MainActionMapActions
     {
         private @PlayerControls m_Wrapper;
         public MainActionMapActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_MainActionMap_Move;
+        public InputAction @Jump => m_Wrapper.m_MainActionMap_Jump;
+        public InputAction @MouseLook => m_Wrapper.m_MainActionMap_MouseLook;
         public InputActionMap Get() { return m_Wrapper.m_MainActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -175,6 +219,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMove;
+                @Jump.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnJump;
+                @MouseLook.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMouseLook;
+                @MouseLook.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMouseLook;
+                @MouseLook.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMouseLook;
             }
             m_Wrapper.m_MainActionMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -182,6 +232,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @MouseLook.started += instance.OnMouseLook;
+                @MouseLook.performed += instance.OnMouseLook;
+                @MouseLook.canceled += instance.OnMouseLook;
             }
         }
     }
@@ -198,5 +254,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface IMainActionMapActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnMouseLook(InputAction.CallbackContext context);
     }
 }
