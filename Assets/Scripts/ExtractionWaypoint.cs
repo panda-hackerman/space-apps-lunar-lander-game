@@ -7,13 +7,14 @@ public class ExtractionWaypoint : MonoBehaviour, IInteractable
 {
     public bool extracted;
     public RegolithCount player;
+    public GameObject drillPrefab;
 
     public void OnInteract()
     {
         Debug.Log("You extracted this regolith");
         extracted = true;
-        gameObject.SetActive(false);
-
         player.CollectRegolith();
+        Instantiate(drillPrefab, transform.position, new Quaternion());
+        gameObject.SetActive(false);
     }
 }
