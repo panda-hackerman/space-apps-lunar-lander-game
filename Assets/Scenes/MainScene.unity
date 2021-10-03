@@ -327,7 +327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2481878}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab (1)
+  m_Name: Plant 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -797,7 +797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127608900}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab
+  m_Name: Plant 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -990,7 +990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132043083}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab (5)
+  m_Name: Plant 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1336,7 +1336,7 @@ GameObject:
   - component: {fileID: 164540113}
   - component: {fileID: 162077781}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab (2)
+  m_Name: Plant 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1404,7 +1404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164180721}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.732211, y: -2.2476964, z: -2.87}
+  m_LocalPosition: {x: -3.877, y: -2.2476964, z: -3.671}
   m_LocalScale: {x: 0.28472993, y: 0.28472993, z: 0.28472993}
   m_Children:
   - {fileID: 164540115}
@@ -2796,7 +2796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 321099874}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab (1)
+  m_Name: Plant 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3518,7 +3518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 492527622}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab (4)
+  m_Name: Plant 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3734,7 +3734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 495071928}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab (3)
+  m_Name: Plant 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4022,7 +4022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 517648130}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab (6)
+  m_Name: Plant 34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4356,7 +4356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 527267560}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab (2)
+  m_Name: Plant 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4527,7 +4527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &569617095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4913,7 +4913,7 @@ GameObject:
   - component: {fileID: 640619367}
   - component: {fileID: 642294243}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab (1)
+  m_Name: Plant 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4969,7 +4969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640192327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6980753, y: -2.2476964, z: -3.376897}
+  m_LocalPosition: {x: 0.6980753, y: -2.2476964, z: -3.804}
   m_LocalScale: {x: 0.28472993, y: 0.28472993, z: 0.28472993}
   m_Children:
   - {fileID: 640619365}
@@ -5002,7 +5002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 642546144}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab
+  m_Name: Plant 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5070,7 +5070,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642508224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33028668, y: -2.594007, z: -3.519262}
+  m_LocalPosition: {x: -0.134, y: -2.594007, z: -3.906}
   m_LocalScale: {x: 0.28472993, y: 0.28472993, z: 0.28472993}
   m_Children:
   - {fileID: 642546146}
@@ -5731,7 +5731,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719544842}
-  m_LocalRotation: {x: 0.0000000027576852, y: 0.998421, z: -0.056174915, w: 0.000000010153913}
+  m_LocalRotation: {x: 0.0000000017623568, y: 0.998421, z: -0.056174915, w: 0.000000033071025}
   m_LocalPosition: {x: -4.4500003, y: 419.3396, z: 5.618853}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5805,7 +5805,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755505245}
-  m_LocalRotation: {x: 0.0000000017516931, y: 0.99898964, z: -0.044941045, w: 0.000000038938197}
+  m_LocalRotation: {x: 0.0000000021383297, y: 0.99898964, z: -0.044941045, w: 0.0000000475327}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5918,7 +5918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759355036}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab (1)
+  m_Name: Plant 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6403,7 +6403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 795466957}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab (5)
+  m_Name: Plant 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6647,7 +6647,7 @@ GameObject:
   - component: {fileID: 839800835}
   - component: {fileID: 845802119}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab (3)
+  m_Name: Plant 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7312,7 +7312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 942512592}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab (6)
+  m_Name: Plant 32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7699,7 +7699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950868933}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab (4)
+  m_Name: Plant 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7869,7 +7869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 960563834}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab (4)
+  m_Name: Plant 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8280,7 +8280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 968381107}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab (4)
+  m_Name: Plant 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8849,7 +8849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212672944}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab
+  m_Name: Plant 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9188,7 +9188,7 @@ GameObject:
   - component: {fileID: 1230388286}
   - component: {fileID: 1227984570}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab (4)
+  m_Name: Plant 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9598,7 +9598,7 @@ GameObject:
   - component: {fileID: 1244953346}
   - component: {fileID: 1247005062}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab (5)
+  m_Name: Plant 31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9759,7 +9759,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302125468}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab (5)
+  m_Name: Plant 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10322,7 +10322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471603377}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab (5)
+  m_Name: Plant 29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10533,7 +10533,7 @@ GameObject:
   - component: {fileID: 1579092001}
   - component: {fileID: 1584970405}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab (6)
+  m_Name: Plant 36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11156,7 +11156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622413731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3894824, y: -2.4366357, z: -3.0550742}
+  m_LocalPosition: {x: -2.61, y: -2.4366357, z: -3.0550742}
   m_LocalScale: {x: 0.28472993, y: 0.28472993, z: 0.28472993}
   m_Children:
   - {fileID: 1622379905}
@@ -11221,7 +11221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1622379907}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab (2)
+  m_Name: Plant 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11440,7 +11440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638883285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5648189, y: -2.130956, z: -3.450927}
+  m_LocalPosition: {x: -4.532, y: -2.130956, z: -2.11}
   m_LocalScale: {x: 0.28472993, y: 0.28472993, z: 0.28472993}
   m_Children:
   - {fileID: 1638450163}
@@ -11509,7 +11509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1638450165}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab
+  m_Name: Plant 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11705,7 +11705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1813454593}
   m_Layer: 0
-  m_Name: Square pot palm plant prefab (3)
+  m_Name: Plant 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11990,7 +11990,7 @@ GameObject:
   - component: {fileID: 1818041848}
   - component: {fileID: 1815785340}
   m_Layer: 0
-  m_Name: Cross pot bamboo plant prefab
+  m_Name: Plant 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12413,6 +12413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oxygenLossRate: 0.5
   currentOxygen: 0
+  maxOxygen: 150
   sceneSwitcher: {fileID: 1827849450}
 --- !u!114 &1827849448
 MonoBehaviour:
@@ -12441,9 +12442,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ee0908c31b56b41a82933d466ac1a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  samplesToWin: 3
   regolithScore: {fileID: 2099943989}
-  sceneSwitcher: {fileID: 1827849450}
+  regolithCount: 0
 --- !u!114 &1827849450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12643,7 +12643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907141236}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab (3)
+  m_Name: Plant 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12955,7 +12955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976838738}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab (2)
+  m_Name: Plant 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13019,7 +13019,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976809074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6024303, y: -2.338812, z: -3.1034784}
+  m_LocalPosition: {x: -1.48, y: -2.338812, z: -3.03}
   m_LocalScale: {x: 0.28472993, y: 0.28472993, z: 0.28472993}
   m_Children:
   - {fileID: 1976838736}
@@ -13320,7 +13320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009850366}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab (6)
+  m_Name: Plant 35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13561,7 +13561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2043970119}
   m_Layer: 0
-  m_Name: Square pot shrub plant prefab (2)
+  m_Name: Plant 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13872,7 +13872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2068363205}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab (6)
+  m_Name: Plant 33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14188,7 +14188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089999194}
   m_Layer: 0
-  m_Name: Cylinder pot spikes plant prefab (1)
+  m_Name: Plant 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14714,7 +14714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2134034369}
   m_Layer: 0
-  m_Name: Sphere pot bamboo plant prefab (3)
+  m_Name: Plant 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14791,6 +14791,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994577539952151709}
+  - component: {fileID: 1217653159697208872}
+  - component: {fileID: 1217653159697208873}
+  - component: {fileID: 1217653159697208874}
   m_Layer: 0
   m_Name: Greenhouse
   m_TagString: Untagged
@@ -14798,6 +14801,86 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1217653159697208872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217653159697208871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0dfb0e202cc1e344a3fa2b3b379c434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plantLevel: 0
+  plants1:
+  - {fileID: 642508224}
+  - {fileID: 127710308}
+  - {fileID: 1638883285}
+  - {fileID: 1212184464}
+  - {fileID: 1817870808}
+  - {fileID: 759515836}
+  - {fileID: 2245366}
+  - {fileID: 321127490}
+  - {fileID: 2090157946}
+  - {fileID: 640192327}
+  plants2:
+  - {fileID: 527100616}
+  - {fileID: 1622413731}
+  - {fileID: 2043879015}
+  - {fileID: 1976809074}
+  - {fileID: 164180721}
+  - {fileID: 1813021473}
+  - {fileID: 2134203361}
+  - {fileID: 495300248}
+  - {fileID: 1907045972}
+  - {fileID: 839500835}
+  plants3:
+  - {fileID: 968871571}
+  - {fileID: 950700005}
+  - {fileID: 960927322}
+  - {fileID: 1230086174}
+  - {fileID: 795754733}
+  - {fileID: 1302022076}
+  - {fileID: 1471250065}
+  - {fileID: 131681643}
+  - {fileID: 1244915490}
+  - {fileID: 942278128}
+  - {fileID: 942278128}
+  - {fileID: 2068786149}
+  - {fileID: 517813026}
+  - {fileID: 2009890270}
+  - {fileID: 1578669057}
+  - {fileID: 492633126}
+  player: {fileID: 1827849449}
+  sceneSwitcher: {fileID: 1217653159697208874}
+--- !u!136 &1217653159697208873
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217653159697208871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 9.18
+  m_Height: 23.979744
+  m_Direction: 1
+  m_Center: {x: 0, y: -2.8098724, z: 0}
+--- !u!114 &1217653159697208874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217653159697208871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bfdb577de70ec48b40784a0d4e49c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1808977313798555905
 GameObject:
   m_ObjectHideFlags: 0
@@ -14838,8 +14921,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217653159697208871}
-  m_LocalRotation: {x: -0.035521165, y: -0, z: -0, w: 0.99936897}
-  m_LocalPosition: {x: -49.3, y: 411.07, z: -8.3}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -49.3, y: 411.07, z: -13.1}
   m_LocalScale: {x: 1.7358203, y: 1.7358203, z: 1.7358203}
   m_Children:
   - {fileID: 6862585478677791247}
@@ -14882,7 +14965,7 @@ Transform:
   - {fileID: 1579092001}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -4.071, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4517064076276473550
 Transform:
   m_ObjectHideFlags: 0
