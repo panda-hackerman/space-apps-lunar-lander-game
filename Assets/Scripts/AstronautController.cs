@@ -12,6 +12,8 @@ public class AstronautController : MonoBehaviour
 
     private float groundDistance;
     private Vector2 movement;
+    public Transform pivot;
+    public Transform cameraTransform;
 
     bool isGrounded()
     {
@@ -29,10 +31,20 @@ public class AstronautController : MonoBehaviour
     {
         if (movement != Vector2.zero)
         {
-            if (movement.y > 0) transform.Rotate(rotationSpeed, 0, 0);
-            if (movement.y < 0) transform.Rotate(-rotationSpeed, 0, 0);
-            if (movement.x > 0) transform.Rotate(0, 0, -rotationSpeed);
-            if (movement.x < 0) transform.Rotate(0, 0, rotationSpeed);
+            if (isGrounded())
+            {
+                if (movement.y > 0) transform.RotateAround(pivot.position, cameraTransform.right, rotationSpeed * Time.deltaTime);
+                if (movement.y < 0) transform.RotateAround(pivot.position, -cameraTransform.right, rotationSpeed * Time.deltaTime);
+                if (movement.x > 0) transform.RotateAround(pivot.position, -cameraTransform.forward, rotationSpeed * Time.deltaTime);
+                if (movement.x < 0) transform.RotateAround(pivot.position, cameraTransform.forward, rotationSpeed * Time.deltaTime);
+            }
+            else
+            {
+                if (movement.y > 0) transform.RotateAround(transform.position, cameraTransform.right, rotationSpeed * Time.deltaTime);
+                if (movement.y < 0) transform.RotateAround(transform.position, -cameraTransform.right, rotationSpeed * Time.deltaTime);
+                if (movement.x > 0) transform.RotateAround(transform.position, -cameraTransform.forward, rotationSpeed * Time.deltaTime);
+                if (movement.x < 0) transform.RotateAround(transform.position, cameraTransform.forward, rotationSpeed * Time.deltaTime);
+            }
         }
     }
 
@@ -45,8 +57,10 @@ public class AstronautController : MonoBehaviour
     {
         if (isGrounded())
         {
+            Vector3 jumpDir = transform.up + new Vector3(0, 1, 0) + cameraTransform.forward;
+
             // adds immediate force to the current upward direction of the player
-            rb.AddForce(transform.up * (jumpForce * Time.deltaTime), ForceMode.Impulse);
+            rb.AddForce(jumpDir * (jumpForce * Time.deltaTime), ForceMode.Impulse);
         }
     }
 }
