@@ -22,8 +22,8 @@ public class FlyingScript : MonoBehaviour
         }
         else
         {
-            if (movePoints[x + 1] != null) return movePoints[0];
-            if (movePoints[x - 1] != null) return movePoints[2];
+            if (x != 0) return movePoints[0];
+            if (x != 2) return movePoints[2];
         }
 
         return null;
