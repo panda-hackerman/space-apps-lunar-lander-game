@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2332a7a0bb3e5b54eb64c5a9fcf8e021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 250
-  rotationSpeed: 2
+  jumpForce: 300
+  rotationSpeed: 1
   rb: {fileID: 144363000}
   astronautCollider: {fileID: 144362999}
 --- !u!114 &144362998
