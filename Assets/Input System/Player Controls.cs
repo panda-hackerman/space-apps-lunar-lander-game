@@ -41,6 +41,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""f4411d6c-79e7-474d-9b37-838c49e6424a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -120,6 +128,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""MouseLook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""dbb48daa-754c-4c9a-9365-5add3c699fa6"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -148,6 +167,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_MainActionMap_Move = m_MainActionMap.FindAction("Move", throwIfNotFound: true);
         m_MainActionMap_Jump = m_MainActionMap.FindAction("Jump", throwIfNotFound: true);
         m_MainActionMap_MouseLook = m_MainActionMap.FindAction("MouseLook", throwIfNotFound: true);
+        m_MainActionMap_Interact = m_MainActionMap.FindAction("Interact", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -200,6 +220,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_MainActionMap_Move;
     private readonly InputAction m_MainActionMap_Jump;
     private readonly InputAction m_MainActionMap_MouseLook;
+    private readonly InputAction m_MainActionMap_Interact;
     public struct MainActionMapActions
     {
         private @PlayerControls m_Wrapper;
@@ -207,6 +228,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_MainActionMap_Move;
         public InputAction @Jump => m_Wrapper.m_MainActionMap_Jump;
         public InputAction @MouseLook => m_Wrapper.m_MainActionMap_MouseLook;
+        public InputAction @Interact => m_Wrapper.m_MainActionMap_Interact;
         public InputActionMap Get() { return m_Wrapper.m_MainActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -225,6 +247,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @MouseLook.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMouseLook;
                 @MouseLook.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMouseLook;
                 @MouseLook.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnMouseLook;
+                @Interact.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnInteract;
+                @Interact.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnInteract;
+                @Interact.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnInteract;
             }
             m_Wrapper.m_MainActionMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -238,6 +263,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @MouseLook.started += instance.OnMouseLook;
                 @MouseLook.performed += instance.OnMouseLook;
                 @MouseLook.canceled += instance.OnMouseLook;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
         }
     }
@@ -256,5 +284,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnMouseLook(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
