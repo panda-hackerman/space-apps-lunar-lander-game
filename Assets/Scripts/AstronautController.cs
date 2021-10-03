@@ -9,6 +9,7 @@ public class AstronautController : MonoBehaviour
     public float rotationSpeed = 2f;
     public Rigidbody rb;
     public Collider astronautCollider;
+    public Transform pivotPoint;
 
     private float groundDistance;
     private Vector2 movement;

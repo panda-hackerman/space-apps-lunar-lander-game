@@ -49,6 +49,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""EnableMap"",
+                    ""type"": ""Button"",
+                    ""id"": ""b4efe779-a94e-411f-b0a3-ea091ff46e0c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -139,6 +147,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fb4f4ec3-e274-4c99-af21-1da8285ecb04"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EnableMap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -168,6 +187,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_MainActionMap_Jump = m_MainActionMap.FindAction("Jump", throwIfNotFound: true);
         m_MainActionMap_MouseLook = m_MainActionMap.FindAction("MouseLook", throwIfNotFound: true);
         m_MainActionMap_Interact = m_MainActionMap.FindAction("Interact", throwIfNotFound: true);
+        m_MainActionMap_EnableMap = m_MainActionMap.FindAction("EnableMap", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -221,6 +241,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_MainActionMap_Jump;
     private readonly InputAction m_MainActionMap_MouseLook;
     private readonly InputAction m_MainActionMap_Interact;
+    private readonly InputAction m_MainActionMap_EnableMap;
     public struct MainActionMapActions
     {
         private @PlayerControls m_Wrapper;
@@ -229,6 +250,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_MainActionMap_Jump;
         public InputAction @MouseLook => m_Wrapper.m_MainActionMap_MouseLook;
         public InputAction @Interact => m_Wrapper.m_MainActionMap_Interact;
+        public InputAction @EnableMap => m_Wrapper.m_MainActionMap_EnableMap;
         public InputActionMap Get() { return m_Wrapper.m_MainActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -250,6 +272,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnInteract;
+                @EnableMap.started -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnEnableMap;
+                @EnableMap.performed -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnEnableMap;
+                @EnableMap.canceled -= m_Wrapper.m_MainActionMapActionsCallbackInterface.OnEnableMap;
             }
             m_Wrapper.m_MainActionMapActionsCallbackInterface = instance;
             if (instance != null)
@@ -266,6 +291,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @EnableMap.started += instance.OnEnableMap;
+                @EnableMap.performed += instance.OnEnableMap;
+                @EnableMap.canceled += instance.OnEnableMap;
             }
         }
     }
@@ -285,5 +313,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnMouseLook(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+        void OnEnableMap(InputAction.CallbackContext context);
     }
 }
