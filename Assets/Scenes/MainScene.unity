@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.023096552, g: 0.02054909, b: 0.021075899, a: 1}
+  m_IndirectSpecularColor: {r: 0.016980097, g: 0.017318722, b: 0.016560461, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1208,6 +1208,19 @@ CapsuleCollider:
   m_Height: 5.5764136
   m_Direction: 1
   m_Center: {x: -0.027458673, y: 2.2977343, z: -0.020940887}
+--- !u!114 &207055401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207055399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895440cda30d37046bb39ba6d904cd3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOxygen: {fileID: 1827849447}
 --- !u!1 &277644538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,7 +1957,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 7.6e-43, y: 9.4e-44, z: 0, w: -11.049263}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2339,7 +2352,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719544842}
-  m_LocalRotation: {x: 0.000000002098638, y: 0.998421, z: -0.05617491, w: 0.000000076375905}
+  m_LocalRotation: {x: 0.000000003093967, y: 0.998421, z: -0.05617491, w: 0.000000053458777}
   m_LocalPosition: {x: -4.4500003, y: 419.3396, z: 5.618853}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2506,7 +2519,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755505245}
-  m_LocalRotation: {x: 0.0000000021383293, y: 0.99898964, z: -0.044941045, w: 0.000000047532694}
+  m_LocalRotation: {x: 0.0000000017516931, y: 0.99898964, z: -0.044941045, w: 0.000000038938197}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
