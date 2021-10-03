@@ -9,6 +9,7 @@ public class PlayerOxygen : MonoBehaviour
 
     private float maxOxygen = 100f;
     private float oxygenLossTimer;
+    public SceneSwitcher sceneSwitcher;
 
     void Start()
     {
@@ -33,6 +34,11 @@ public class PlayerOxygen : MonoBehaviour
         else
         {
             oxygenLossTimer -= Time.deltaTime;
+        }
+
+        if (currentOxygen <= 0)
+        {
+            sceneSwitcher.LoadScene("LoseScreen");
         }
     }
     public void RefillOxygen()
