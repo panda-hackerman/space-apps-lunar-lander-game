@@ -7,6 +7,7 @@ public class PlayerOxygen : MonoBehaviour
     public float oxygenLossRate = 1f;
     public float currentOxygen;
 
+    [SerializeField] 
     private float maxOxygen = 100f;
     private float oxygenLossTimer;
     public SceneSwitcher sceneSwitcher;
