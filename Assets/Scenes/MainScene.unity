@@ -3383,7 +3383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   extracted: 0
   player: {fileID: 1827849449}
-  drillPrefab: {fileID: 919132149155446097, guid: 896f27c015ab2b04ba27a5c0384e3c27,
+  drillPrefab: {fileID: 7007601136888111726, guid: dc8cacf6cda8ad54e9ef52b0d71f10a8,
     type: 3}
 --- !u!136 &386276556
 CapsuleCollider:
@@ -5920,7 +5920,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719544842}
-  m_LocalRotation: {x: -0.000002075394, y: 0.9999978, z: 0.0017177492, w: 0.001208264}
+  m_LocalRotation: {x: -0.0000020754578, y: 0.9999978, z: 0.0017177492, w: 0.0012082268}
   m_LocalPosition: {x: -4.467266, y: 416.87616, z: 7.2552266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6338,7 +6338,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771431294}
-  m_LocalRotation: {x: 0.000006254257, y: 0.9999859, z: -0.0051763514, w: 0.0012082198}
+  m_LocalRotation: {x: 0.0000062542576, y: 0.9999859, z: -0.005176352, w: 0.0012082196}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10438,7 +10438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   extracted: 0
   player: {fileID: 1827849449}
-  drillPrefab: {fileID: 919132149155446097, guid: 896f27c015ab2b04ba27a5c0384e3c27,
+  drillPrefab: {fileID: 7007601136888111726, guid: dc8cacf6cda8ad54e9ef52b0d71f10a8,
     type: 3}
 --- !u!1 &1389168798
 GameObject:
@@ -14978,7 +14978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   extracted: 0
   player: {fileID: 1827849449}
-  drillPrefab: {fileID: 919132149155446097, guid: 896f27c015ab2b04ba27a5c0384e3c27,
+  drillPrefab: {fileID: 7007601136888111726, guid: dc8cacf6cda8ad54e9ef52b0d71f10a8,
     type: 3}
 --- !u!23 &2070787361
 MeshRenderer:
