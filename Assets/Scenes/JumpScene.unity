@@ -329,7 +329,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101040512}
-  m_LocalRotation: {x: -0.0000041297917, y: 0.99998194, z: 0.005975149, w: 0.00069112505}
+  m_LocalRotation: {x: -0.000004129495, y: 0.99998194, z: 0.005975149, w: 0.0006911678}
   m_LocalPosition: {x: -45.022064, y: 422.03595, z: 42.096203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -454,7 +454,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2332a7a0bb3e5b54eb64c5a9fcf8e021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 350
+  moveSpeed: 5
+  jumpForce: 150
   rotationSpeed: 150
   rb: {fileID: 144363000}
   astronautCollider: {fileID: 144362999}
@@ -519,7 +520,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!4 &144363001
 Transform:
@@ -1757,7 +1758,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1760089080}
-  m_LocalRotation: {x: 0.0000006351112, y: 0.99999934, z: -0.0009189458, w: 0.0006911297}
+  m_LocalRotation: {x: 0.00000063514267, y: 0.99999934, z: -0.0009189457, w: 0.0006911641}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
