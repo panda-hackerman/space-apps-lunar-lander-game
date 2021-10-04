@@ -11,6 +11,7 @@ public class PlayerOxygen : MonoBehaviour
     private float maxOxygen = 100f;
     private float oxygenLossTimer;
     public SceneSwitcher sceneSwitcher;
+    public GameObject warningLight;
 
     void Start()
     {
@@ -36,6 +37,8 @@ public class PlayerOxygen : MonoBehaviour
         {
             oxygenLossTimer -= Time.deltaTime;
         }
+
+        warningLight.gameObject.SetActive(currentOxygen <= 30);
 
         if (currentOxygen <= 0)
         {
