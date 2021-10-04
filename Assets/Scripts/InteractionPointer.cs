@@ -7,6 +7,7 @@ public class InteractionPointer : MonoBehaviour
 {
     public Camera playerCam;
     public Transform reticle;
+    public GameObject ActionSprite;
     private RaycastHit hit;
     public float pointerDistance = 13.5f;
 
@@ -21,6 +22,13 @@ public class InteractionPointer : MonoBehaviour
         // Checks if whatever the ray hits is in a acceptable distance
         if(Physics.Raycast(ray, out hit, pointerDistance))
         {
+            IInteractable interactable = hit.transform.GetComponent<IInteractable>();
+            if (interactable != null)
+            {
+                ActionSprite.SetActive(true);
+            }
+            else ActionSprite.SetActive(false);
+
             // The reticle is for testing, it can be replaced with a crosshair probably or just made nicer looking
             // moves reticle to that position
             reticle.position = hit.point;
