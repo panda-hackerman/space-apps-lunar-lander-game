@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 257780096}
   - component: {fileID: 257780095}
   m_Layer: 5
-  m_Name: Programming (1)
+  m_Name: Assets Used
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1132,7 +1132,7 @@ GameObject:
   - component: {fileID: 794634933}
   - component: {fileID: 794634932}
   m_Layer: 5
-  m_Name: Eli, Fabian (1)
+  m_Name: AssetCredits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1154,8 +1154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 651.33, y: 274.03}
-  m_SizeDelta: {x: 1302.6567, y: 185.91908}
+  m_AnchoredPosition: {x: 651.33, y: 231.1}
+  m_SizeDelta: {x: 1302.6567, y: 271.77472}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &794634932
 MonoBehaviour:
@@ -1181,6 +1181,9 @@ MonoBehaviour:
     139 Vector Icons - GDev
 
     Scary Sound FX - Anthon
+
+    Free
+    Decorative Plants - Yughues
 
 '
   m_isRightToLeft: 0
