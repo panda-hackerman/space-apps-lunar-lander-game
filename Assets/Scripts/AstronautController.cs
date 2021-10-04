@@ -21,7 +21,7 @@ public class AstronautController : MonoBehaviour
     private float getUpTimer = 2;
     private float getUpTime;
 
-    bool isGrounded()
+    public bool isGrounded()
     {
         // cast from position to 0.1 units under the player
         return Physics.Raycast(transform.position, -Vector3.up, groundDistance + 0.1f);

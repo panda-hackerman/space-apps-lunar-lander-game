@@ -13,6 +13,8 @@ public class PlayerOxygen : MonoBehaviour
     public SceneSwitcher sceneSwitcher;
     public GameObject warningLight;
 
+    public bool refiiled;
+
     void Start()
     {
         // Setting values
@@ -49,5 +51,7 @@ public class PlayerOxygen : MonoBehaviour
     {
         // Call from a different script like a refill station
         currentOxygen = maxOxygen;
+
+        refiiled = true;
     }
 }
